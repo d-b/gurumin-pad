@@ -23,10 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proxy.hpp">
+    <ClInclude Include="device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="device.hpp">
+    <ClInclude Include="proxy.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

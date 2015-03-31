@@ -1,4 +1,4 @@
-LIBRARY DINPUT8
+LIBRARY
 EXPORTS
 	DirectInput8Create=_proxy_DirectInput8Create@20
 	DllCanUnloadNow=_proxy_DllCanUnloadNow@0 PRIVATE
