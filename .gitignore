@@ -194,3 +194,9 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# Temporary exception for release
+![Rr]elease/
+**/[Rr]elease/*
+!/[Rr]elease/dinput8.dll
+
