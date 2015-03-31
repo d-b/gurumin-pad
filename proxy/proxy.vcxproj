@@ -80,9 +80,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="device.cpp" />
     <ClCompile Include="proxy.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="device.hpp" />
     <ClInclude Include="proxy.hpp" />
   </ItemGroup>
   <ItemGroup>

@@ -97,7 +97,10 @@ extern "C"
         PROC_DIRECTINPUT8CREATE* di8create
             = (PROC_DIRECTINPUT8CREATE*) proxy::exports_dinput8[0];
 
-        return di8create(hinst, dwVersion, riidltf, ppvOut, punkOuter);
+        IDirectInput8A* target = NULL;
+        HRESULT res = di8create(hinst, dwVersion, riidltf, (LPVOID*)&target, punkOuter);
+        if (res == DI_OK) *ppvOut = new proxy::ProxyDirectInput8A(target);
+        return res;
     }
 
     HRESULT __declspec(naked) WINAPI proxy_DllCanUnloadNow() {

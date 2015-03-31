@@ -3,14 +3,21 @@
  * Copyright (C) 2015 Daniel Bloemendal. All rights reserved.
  */
 
-#define DIRECTINPUT_VERSION 0x0800
-
-#define PROJECT_TITLE L"GuruminPad"
+// Project settings
+#define PROJECT_TITLE L"Gurumin Pad"
 #define PROJECT_VERSION 0x00000000
 
-#include <Windows.h>
-#include <dinput.h>
+// DirectX settings
+#define DIRECTINPUT_VERSION 0x0800
 
+// STL
 #include <vector>
 #include <string>
 #include <sstream>
+
+// Platform
+#include <Windows.h>
+#include <dinput.h>
+
+// Project 
+#include "device.hpp"
